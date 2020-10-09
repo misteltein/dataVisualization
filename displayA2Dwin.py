@@ -12,4 +12,4 @@ ax.set_xlim(-30,30)
 ax.set_ylim(-30,30)
 ax.scatter(data['a'],data['b'],alpha=0.05,s=1)
 #plt.show()
-plt.savefig('dataA_a_b.png');
+plt.savefig('dataA_a_b.png')
