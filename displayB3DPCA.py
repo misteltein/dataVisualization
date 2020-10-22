@@ -14,6 +14,13 @@ print(pca.components_)
 print('mean:')
 print(pca.mean_)
 
+cp = pca.explained_variance_ratio_
+cp = np.hstack([cp.cumsum()])
+print('Comulative contribution rate')
+print('      PC1:',cp[0])
+print('   PC1, 2:',cp[1])
+print('PC1, 2, 3:',cp[2])
+
 transformedData = pca.transform(data)
 
 fig = plt.figure()
